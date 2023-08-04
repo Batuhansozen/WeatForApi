@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:viewBindingIgnore="true"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnmenu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/menu" />
+
+        <SearchView
+            android:id="@+id/svarama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </SearchView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/bacgroundnight">
+
+        <LinearLayout
+            android:layout_width="120dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:layout_marginEnd="0dp"
+            android:layout_gravity="end"
+            >
+
+
+            <ImageButton
+                android:id="@+id/imgfavbtn"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginEnd="0dp"
+                app:srcCompat="@drawable/fav"
+                android:contentDescription="@string/fav"/>
+
+            <ImageButton
+                android:id="@+id/imgnotfavbtn"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginEnd="0dp"
+                app:srcCompat="@drawable/notfav"
+                android:contentDescription="@string/notfav"/>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="249dp"
+            android:layout_height="120dp"
+            android:layout_gravity="end"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginBottom="5dp"
+            android:layout_weight="1"
+            android:contentDescription="@string/resim"
+            android:cropToPadding="true"
+            app:srcCompat="@drawable/cloud"
+            tools:ignore="ImageContrastCheck" />
+
+        <TextView
+            android:id="@+id/tvderece"
+            android:layout_width="fill_parent"
+            android:layout_height="49dp"
+            android:gravity="end"
+            android:text="@string/xderece"
+            android:textColor="#90CAF9"
+            android:textSize="34sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvsehir"
+            android:layout_width="fill_parent"
+            android:layout_height="36dp"
+            android:gravity="end"
+            android:text="@string/xsehri"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvtarih"
+            android:layout_width="fill_parent"
+            android:layout_height="35dp"
+            android:gravity="end"
+            android:text="@string/xtarih"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            tools:ignore="RtlHardcoded" />
+
+        <TextView
+            android:id="@+id/tvuyari"
+            android:layout_width="fill_parent"
+            android:layout_height="31dp"
+            android:text="@string/uyari"
+            android:textColor="#B2DFDB" />
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/tbsecenek"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#6FDCBD"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme"
+            android:visibility="visible"
+            app:buttonGravity="top"
+            app:menu="@menu/nav_menu" />
+
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/vpsayfa"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_weight="5"
+            android:orientation="horizontal">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvfavoriler1"
+                android:layout_width="126dp"
+                android:layout_height="match_parent"
+                android:text="@string/xfavsehir1"
+                app:cardBackgroundColor="#70D3B7"
+                app:srcCompat="@drawable/fav"
+                app:cardCornerRadius="15dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/ivfav1"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:contentDescription="@string/weather"
+                        app:srcCompat="@drawable/weather"
+                        tools:ignore="ImageContrastCheck"
+
+                        />
+
+                    <TextView
+                        android:id="@+id/tv1fav1"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="5dp"
+                        android:textSize="40sp"
+                        android:text="@string/xderece"
+                        android:textColor="#004D40" />
+
+                    <TextView
+                        android:id="@+id/tv2fav1"
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/xsehri"
+                        android:textColor="#004D40" />
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvfavoriler2"
+                android:layout_width="126dp"
+                android:layout_height="match_parent"
+                android:text="@string/xfavsehir2"
+                app:cardBackgroundColor="#70D3B7"
+                app:srcCompat="@drawable/fav"
+                app:cardCornerRadius="15dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/ivfav2"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:contentDescription="@string/weather"
+                        app:srcCompat="@drawable/weather"
+                        tools:ignore="ImageContrastCheck"
+
+                        />
+
+                    <TextView
+                        android:id="@+id/tv1fav2"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="5dp"
+                        android:textSize="40sp"
+                        android:text="@string/xderece"
+                        android:textColor="#004D40" />
+
+                    <TextView
+                        android:id="@+id/tv2fav2"
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/xsehri"
+                        android:textColor="#004D40" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvfavoriler3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/xfavsehir3"
+                app:cardBackgroundColor="#70D3B7"
+                app:srcCompat="@drawable/fav"
+                app:cardCornerRadius="15dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/ivfav3"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:contentDescription="@string/weather"
+                        app:srcCompat="@drawable/weather"
+                        tools:ignore="ImageContrastCheck"
+
+                        />
+
+                    <TextView
+                        android:id="@+id/tv1fav3"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="5dp"
+                        android:textSize="40sp"
+                        android:text="@string/xderece"
+                        android:textColor="#004D40" />
+
+                    <TextView
+                        android:id="@+id/tv2fav3"
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/xsehri"
+                        android:textColor="#004D40" />
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

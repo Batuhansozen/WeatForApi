@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">WeatFor</string>
+    <string name="menu">MENU</string>
+    <string name="todo">TODO</string>
+    <string name="button">Button</string>
+    <string name="resim">Resim</string>
+    <string name="xderece">X Derece</string>
+    <string name="xsehri">X Sehri</string>
+    <string name="xtarih">X Tarih</string>
+    <string name="uyari">Uyarı Mesajı</string>
+    <string name="week">Week</string>
+    <string name="nnav_sun">Weather selected</string>
+    <string name="nnav_rain">Rain selected</string>
+    <string name="nnav_wind">Wind selected</string>
+    <string name="nnav_weekly">Weekly graphic selected</string>
+    <string name="nnav_daily">Daily graphic selected</string>
+    <string name="fav">fav</string>
+    <string name="notfav">notfav</string>
+    <string name="xfavsehir1">xfavsehir1</string>
+    <string name="xfavsehir2">xfavsehir2</string>
+    <string name="xfavsehir3">xfavsehir3</string>
+    <string name="weather">weather</string>
+    <string name="resim1">Resim1</string>
+    <string name="resim2">Resim2</string>
+    <string name="resim3">Resim3</string>
+    <string name="resim4">Resim4</string>
+
+</resources>

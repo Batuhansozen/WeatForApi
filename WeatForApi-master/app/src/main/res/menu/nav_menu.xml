@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group>
+        <item
+            android:id="@+id/nav_sun"
+            android:icon="@drawable/sun"
+            android:title="@string/nnav_sun"
+            android:visibility="visible"
+            app:showAsAction="ifRoom" />
+
+        <item
+            android:id="@+id/nav_rain"
+            android:icon="@drawable/rain"
+            android:title="@string/nnav_rain"
+            android:visibility="visible"
+            app:showAsAction="ifRoom" />
+
+        <item
+            android:id="@+id/nav_wind"
+            android:icon="@drawable/wind"
+            android:title="@string/nnav_wind"
+            android:visibility="visible"
+            app:showAsAction="ifRoom" />
+    </group>
+    <group >
+        <item
+            android:id="@+id/nav_weekly"
+            android:icon="@drawable/week"
+            android:title="@string/nnav_weekly"
+            android:visibility="visible"
+            app:showAsAction="ifRoom" />
+
+        <item
+            android:id="@+id/nav_daily"
+            android:icon="@drawable/day"
+            android:title="@string/nnav_daily"
+            android:visibility="visible"
+            app:showAsAction="ifRoom" />
+    </group>
+
+</menu>
